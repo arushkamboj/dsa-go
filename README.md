@@ -1,2 +1,2 @@
 # dsa-go
-This repository contains my implementation of common Data Structures and Algorithms in Go.
+This repository contains my implementations of common Data Structures and Algorithms in Go.
