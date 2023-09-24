@@ -10,10 +10,15 @@ func BinarySearch() {
 	find := 78
 
 	//==============================
-	ImplBinarySearch(inputArray, find)
+	if ImplBinarySearch(inputArray, find) {
+		fmt.Println("Found the element", find)
+	} else {
+		// low and high have crossed, element not present
+		fmt.Println("Did not find element", find, "in the list")
+	}
 }
 
-func ImplBinarySearch(list []int, find int) {
+func ImplBinarySearch(list []int, find int) bool {
 	// define mid = (low + high) / 2
 	low := 0
 	high := len(list) - 1
@@ -21,8 +26,7 @@ func ImplBinarySearch(list []int, find int) {
 	for low <= high {
 		mid := (low + high) / 2
 		if find == list[mid] {
-			fmt.Println("Found the element", find)
-			return
+			return true
 		}
 
 		if find < list[mid] {
@@ -33,7 +37,5 @@ func ImplBinarySearch(list []int, find int) {
 			low = mid + 1
 		}
 	}
-
-	// low and high have crossed, element not present
-	fmt.Println("Did not find element", find, "in the list")
+	return false
 }
