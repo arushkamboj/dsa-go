@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/arushkamboj/dsa-go/ds"
+	"github.com/arushkamboj/dsa-go/algo"
 )
 
 func main() {
@@ -16,11 +16,14 @@ func main() {
 	// ===========================================
 
 	// LinkedList
-	ds.ImplLinkedList()
+	//ds.ImplLinkedList()
 
 	// ===========================================
 	// Algorithms
 	// ===========================================
 	// BinarySearch Algo
 	//algo.BinarySearch()
+
+	// Selection Sort
+	algo.SelectionSort()
 }
