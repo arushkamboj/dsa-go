@@ -43,6 +43,8 @@ func (list *LinkedList) Iterate() {
 }
 
 func ImplLinkedList() {
+	fmt.Println("Implementing LinkedList in Go")
+	fmt.Println("=================================")
 	list := LinkedList{}
 
 	// Create a list of 7 random integers

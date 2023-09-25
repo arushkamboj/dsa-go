@@ -6,6 +6,8 @@ import (
 )
 
 func SelectionSort() {
+	fmt.Println("Implementing Selection Sort in Go")
+	fmt.Println("=================================")
 	// create a slice of random length and random elements
 	len := 10
 	list := make([]int, len)
